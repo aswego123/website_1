@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Source+Code+Pro:ital,wght@1,300;1,500&display=swap');
+
+
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+}
+
+
+/* -----------------------Giving 
+fonts-----------------------  */
+.greeting{
+    font-family: 'Source Code Pro', monospace;
+   
+    font-weight: 800;
+}
+
+.name{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+}
+
+.aboutMe{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 800;
+}
+
+.moreAboutMe{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+}
+
+
+/* Layout starts from here  */
+.content {
+    display: flex;
+}
+
+nav {
+
+    /* This color is color of navbar  */
+    background-color: gainsboro;
+    /* color: red; */
+    flex-basis: 20%;
+    min-width: 140px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+nav h3 {
+    /* background-color: red; */
+    text-align: center;
+}
+
+nav ul li {
+    /* background-color: yellow; */
+    /* list-style: none; */
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+nav a {
+    /* background-color: green; */
+    /* padding: 20px 20px; */
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-bottom: 1px black solid;
+}
+
+.mainContent {
+    /* background-color: antiquewhite; */
+    flex-basis: 80%;
+
+    display: flex;
+    margin: auto;
+}
+
+.mainContent .mainContent-text {
+    /* border: 2px black solid; */
+    display: flex;
+    flex-direction: column;
+    /* max-width: 80px; */
+    margin: auto;
+    gap: 10px;
+    padding-left: 20px;
+   
+
+}
+
+.mainContent .mainContent-image {
+    /* border: 2px steelblue solid; */
+}
+
+
+/* Styling the section about our work experience */
+.myExperience{
+    background-color: rgb(245, 236, 236);
+    width: 70%;
+    min-width: 400px;
+    margin: auto;
+}
+
+
+@media(max-width:700px){
+    .mainContent{
+        flex-direction: column-reverse;
+    }
+
+    .mainContent-image{
+        max-width: 100%;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:460px){
+    .mainContent-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media(max-width:400px){
+    .myExperience{
+        min-width: 100%;
+    }
+
+   
+}
